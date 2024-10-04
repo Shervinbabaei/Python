@@ -1,0 +1,26 @@
+# Mini Project: Basic User Information System
+# This project will ask the user for various pieces of information, perform some calculations and type conversions, 
+# and display the results in a formatted way.
+
+# Goal:
+# Gather user input for name, age, GPA, and student status.
+# Perform type conversions and calculations (e.g., next birthday, grade point change).
+# Display everything in a formatted output.
+
+# gathering user info
+print("\n--- User Information ---")
+
+name = input("What is your name?: ")
+last_name = input("What is your last name?: ")
+age = input("What is your age?: ")
+gpa = float(input("What is your gpa?: "))
+is_student = input("Are you a student? Yes or No:  ").lower() == 'yes'
+
+# GPA calculation
+next_age = int(age) + 1
+
+print(f"Name: {name} {last_name}")
+print(f"Current Age: {age}")
+print(f"Current Gpa: {gpa}")
+print(f"Student Status: {is_student}")
+print(f"Next Year, you'll be: {next_age} years old!")
